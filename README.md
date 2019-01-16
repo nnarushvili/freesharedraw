@@ -27,4 +27,8 @@ Using NetBeans:
 8. Right click on the project and select "run"
 9. The project should be accessible now to your local machine and the machines on the same network
 
+
+Feel free to use this anywhere without concern.
+
+
 If you have any questions, open an issue or contact me at: nikaert243@gmail.com
