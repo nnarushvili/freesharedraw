@@ -1,6 +1,9 @@
 # freesharedraw
 Simple Java Websocket back-end for shared drawing application on HTML5 canvas
 
+The demo is already deployed at freesharedraw.herokuapp.com
+
+
 Deploy the application using any of your desired methods on a web server of your choice.
 
 Open the application on the indicated context path on your local machine.
