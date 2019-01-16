@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="canvas_websocket.js"></script>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body onload="init();">
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <input style="margin: 20px;" type="text" size="20" id="username" placeholder='Enter username...'>
+            <button style="margin: 20px;" type="button" id="connectBtn" onclick="connect();">Connect</button>
+        </div>
+        <div>
+            <div style="width: 15%; margin: 0 auto" id="currentColor">Current color - black</div>
+            <div style="display: flex; flex-direction:row; justify-content: center">
+                <div style="cursor: pointer; margin: 10px; width:40px;height:40px;background:green;" id="green" onclick="color(this)"></div>
+                <div style="cursor: pointer; margin: 10px; width:40px;height:40px;background:blue;" id="blue" onclick="color(this)"></div>
+                <div style="cursor: pointer; margin: 10px; width:40px;height:40px;background:red;" id="red" onclick="color(this)"></div>
+                <div style="cursor: pointer; margin: 10px; width:40px;height:40px;background:yellow;" id="yellow" onclick="color(this)"></div>
+                <div style="cursor: pointer; margin: 10px; width:40px;height:40px;background:orange;" id="orange" onclick="color(this)"></div>
+                <div style="cursor: pointer; margin: 10px; width:40px;height:40px;background:black;" id="black" onclick="color(this)"></div>
+            </div>
+            <div id="players" style="width:100%; text-align: center;"> 
+                <ul style="display: inline" id="playersList">
+
+                </ul>
+                <div style="width:100%; text-align: center;">
+                     <canvas id="can" width="400" height="400" style="border:2px solid; display:inline"></canvas>
+                </div>
+            </div>
+            <div style="width:100%; text-align:center">
+                <input type="button" value="clear" id="clr" size="23" onclick="erase()">
+                <input type="button" value="reset mouse" id="resmouse" size="23" onclick="resetMouse()">
+                <input type="button" value="disconnect" id="disconnect" size="23" onclick="disconnect()">
+            </div>
+        </div>
+    </body>
+</html>
